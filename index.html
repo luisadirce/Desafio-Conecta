@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&family=Roboto&display=swap" rel="stylesheet">
-        <title>Desafio Conecta</title>
+    
+    <title>Desafio Conecta</title>
 </head>
 <body>
 
-    <!-- Header -->
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -79,11 +78,11 @@
 
     <section class="collage-section py-5">
         <div class="container">
-            <div class="row mx-auto">
-                <div class="col-sm-12 column">
+            <div class="row">
+                <div class="col-sm-6 column">
                     <img src="./assets/img/left-collage.png">
                 </div>
-                <div class="col-sm-12 column">
+                <div class="col-sm-6 column">
                     <div class="quote-area">
                         <div class="quote-text d-block">
                             <p class="quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo hendrerit.”</p>
@@ -93,27 +92,51 @@
                     <div class="right-side-img center">
                         <p>Peça para seu bar</p>
                     </div>
-                    
                 </div>
             </div>
         </div>
 
     </section>
 
+    <div class="first-div-first-can">
+        <div class="second-div-first-can">
+            <img src="./assets/img/lata-guarana1.png" id="most-left-can" alt="">
+        </div>
+    </div>
 
-    <section class="green-section mt-5 pt-5">
-        <div class="container center">
-            <!-- <img src="./assets/img/lata-guarana3.png" alt="">
-            <img src="./assets/img/lata-guarana4.png" alt=""> -->
-            <div class="row center d-block">
-                <h3 class="green-section-title mt-5">Quer experimentar?</h3>
-                <button type="button" class="black-Button btn btn-lg mt-4 px-5 py-3">Aqui um CTA</button>
+    <section class="green-section mt-5 pt-5 center">
+        <div class="container">
+
+            <div class="first-div-first-can">
+                <div class="second-div-first-can">
+                    <img src="./assets/img/lata-guarana1.png" id="left-can" alt="">
+                </div>
+            </div> 
+
+            <div class="responsive-green-section">
+                <div class="first-center-can-div row">
+                    <div class="second-center-can-div">
+                        <img src="./assets/img/lata-guarana1.png" id="center-can" alt="">
+                    </div>
+                </div>
+                <div class="green-section-text row">
+                   <div class="row mt-5 my-auto">
+                        <h3 class="green-section-title mt-5">Quer experimentar?</h3>
+                        <button type="button" class="black-Button btn btn-lg mt-4 px-5 py-3">Aqui um CTA</button>
+                    </div> 
+                </div>
             </div>
-            <!-- <img src="./assets/img/lata-guarana5.png" alt=""> -->
+
+            <!-- <div class="first-div-first-can">
+                <div class="second-div-first-can">
+                    <img src="./assets/img/lata-guarana1.png" id="right-can" alt="">
+                </div>
+            </div>   -->
+            
         </div>
     </section>
 
-    <section class="contact-form py-5">
+    <section class="contact-form pt-5">
         <div class="container">
             <div class="row">
                 
@@ -143,7 +166,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="phone">Telefone</label>
-                                    <input type="number" class="form-control" id="phone" placeholder="(21) 00000-0000">
+                                    <input type="tel" autocomplete="tel" class="form-control tel" id="phone" placeholder="(21) 00000-0000">
                                 </div>
                             </div>
                             <div class="col">
@@ -157,11 +180,11 @@
                         <div class="form-group">
                             <label for="subject">Assunto</label>
                             <select class="form-control" id="subject">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
+                              <option disabled selected hidden>Selecione um Assunto</option>
+                              <option>Selecione um Assunto</option>
+                              <option>Selecione um Assunto</option>
+                              <option>Selecione um Assunto</option>
+                              <option>Selecione um Assunto</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -177,19 +200,23 @@
         </div>
     </section>
 
+    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery/jquery.mask.min.js"></script>
+    <script src="assets/js/jquery/jquery-masks.js"></script>
+    <script src="assets/js/jquery/jquery-form-mask.js"></script>
+
     <footer>
         <div class="container">
            <div class="row d-flex">
-                <div class="col">
-                    <p class="m-3 p-0">Todos os direitos reservados © 2020 Conecta</p>
+                <div class="col col-md-6 col-sm-12 ">
+                    <p class="m-3 p-0" id="copyright">Todos os direitos reservados © 2020 Conecta</p>
                 </div>
-                <div class="col d-flex justify-content-end">
+                <div class="col-md-6 col-sm-12 d-flex justify-content-lg-end" id="site-author">
                     <p class="text-uppercase mt-3 mb-3 ml-3 mr-0 p-0">Projetado por</p>
                     <img src="./assets/img/logo-conecta.png"  alt="">
                 </div>
             </div> 
         </div>
-        
     </footer>
 
 </body>
